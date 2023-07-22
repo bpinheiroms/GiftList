@@ -65,6 +65,10 @@ class MerkleTree {
 
     return this._getRoot(layer);
   }
+
+  getIndex(leaves, name){
+    return leaves.findIndex((n) => n === name);
+  }
 }
 
 module.exports = MerkleTree;
